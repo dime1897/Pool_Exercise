@@ -1,0 +1,11 @@
+<html>
+    <link rel="stylesheet" href="/static/pool.css">
+    <body>
+        <h1>List of Leagues:</h1>
+        <ul>
+        {% for league in leaguelist %}
+            <li><a href="/api/v1/leagues/{{league}}">{{league}}</a></li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>
